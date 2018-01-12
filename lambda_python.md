@@ -1,0 +1,28 @@
+# --------------- Main handler ------------------
+def lambda_handler(event, context):
+    if event['request']['intent']['name'] == 'MyIntent':
+        return MyIntent(event)
+
+# --------------- Functions that control the skill's behavior ------------------
+def MyIntent(event):
+    return response("Hi there!", False)
+    
+# --------------- Helper that build all of the responses ----------------------
+
+def response(text, should_end_session):
+    return {
+    "version": "1.0",
+     "response": {
+      "outputSpeech": {
+       "text": text,
+       "type": "PlainText"
+      },
+     "speechletResponse": {
+      "outputSpeech": {
+       "text": text
+      },
+      "shouldEndSession": should_end_session
+      }
+     },
+    "sessionAttributes": {}
+    }
