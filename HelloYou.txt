@@ -1,0 +1,37 @@
+# --------------- Main handler ------------------
+def lambda_handler(event, context):
+    session = event['session']
+    if event['request']['intent']['name'] == 'HelloIntent':
+        return HelloIntent(event)
+    elif event['request']['intent']['name'] == 'HelloYouIntent':
+        return HelloYouIntent(event, session)
+
+
+
+# --------------- Functions that control the skill's behavior ------------------
+def HelloIntent(event):
+    return response("Goodmorning C 2", False)
+
+def HelloYouIntent(event, session):
+    session['attributes']['name'] = event['request']['intent']['slots']['userName']['value']
+    return response("Goodmorning " + session['attributes']['name'], False)
+
+# --------------- Helper that build all of the responses ----------------------
+
+def response(text, should_end_session):
+    return {
+    "version": "1.0",
+     "response": {
+      "outputSpeech": {
+       "text": text,
+       "type": "PlainText"
+      },
+     "speechletResponse": {
+      "outputSpeech": {
+       "text": text
+      },
+      "shouldEndSession": should_end_session
+      }
+     },
+    "sessionAttributes":{}
+    }
