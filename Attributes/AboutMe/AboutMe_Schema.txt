@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "userName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "MyIntent"
+    },
+    {
+      "intent": "RepeatIntent"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# --------------- Main handler ------------------
+def lambda_handler(event, context):
+    session = event['session']
+    if event['request']['intent']['name'] == 'MyIntent':
+        return MyIntent(event, session)
+    elif event['request']['intent']['name'] == 'RepeatIntent':
+        return RepeatIntent(event,session)
+
+# --------------- Functions that control the skill's behavior ------------------
+def MyIntent(event,session):
+    session['attributes']['name'] = event['request']['intent']['slots']['userName']['value']
+    return response("Hi there! " + session['attributes']['name'], session['attributes'], False)
+def RepeatIntent(event, session):
+    return response("Your name is " + session['attributes']['name'], session['attributes'], False)
+
+# --------------- Helper that build all of the responses ----------------------
+
+def response(text, session_attributes, should_end_session):
+    return {
+    "version": "1.0",
+     "response": {
+      "outputSpeech": {
+       "text": text,
+       "type": "PlainText"
+      },
+     "speechletResponse": {
+      "outputSpeech": {
+       "text": text
+      },
+      "shouldEndSession": should_end_session
+      }
+     },
+    "sessionAttributes": session_attributes
+    }
