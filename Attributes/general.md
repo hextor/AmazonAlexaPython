@@ -7,9 +7,10 @@ Alexa stores variables that can be used 'globally' under something called `event
 
  `attributes`: is one step into session that will hold the variable names and its data
 
- `variable`: Unlike the others, you can the name of variable to anything you want. It will create an object that will store any data given into it.
+ `variable`: This will be the identifier that will hold any data you give it. The variable will not exist until you create it. Unlike the others, you can change the name of variable to anything you want.
 
- So, if we have `event['session']['attributes']['favoritefood']` then just created a variable called `favoritefood` inside of `attributes` which is inside of `session` which will be inside of `event`!<br/>
+ So, if we have `event['session']['attributes']['favoritefood']` then just created a variable called `favoritefood` inside of `attributes` which is inside of `session` which will be inside of `event`!
+
  Which will look something like this in Alexa:
 ```
 event{
