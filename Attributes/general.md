@@ -21,7 +21,7 @@ event{
 }
 ```
 
-Notice there is a pair of braces, `{}`, right next to `favoritefood`.
+Notice there are a pair of braces, `{}`, right next to `favoritefood`.
 All it means is that we created the variable but it does not hold any data.
 To fill it with data, we just need to include `=` to the right of `event['session']['attributes']['favoritefood']`.
 ```
