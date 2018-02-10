@@ -11,6 +11,15 @@
     },
     {
       "intent": "RepeatIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "foodName",
+          "type": "AMAZON.Food"
+        }
+      ],
+      "intent": "FoodIntent"
     }
   ]
 }

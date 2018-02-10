@@ -1,0 +1,4 @@
+MyIntent hello my name is {userName}
+RepeatIntent tell me about myself
+FoodIntent I love {foodName}
+FoodIntent My favorite food is {foodName}

@@ -3,6 +3,8 @@ def lambda_handler(event, context):
     session = event['session']
     if event['request']['intent']['name'] == 'MyIntent':
         return MyIntent(event, session)
+    if event['request']['intent']['name'] == 'FoodIntent':
+        return FoodIntent(event, session)
     elif event['request']['intent']['name'] == 'RepeatIntent':
         return RepeatIntent(event,session)
 
@@ -10,8 +12,16 @@ def lambda_handler(event, context):
 def MyIntent(event,session):
     session['attributes']['name'] = event['request']['intent']['slots']['userName']['value']
     return response("Hi there! " + session['attributes']['name'], session['attributes'], False)
+
+def FoodIntent(event,session):
+    session['attributes']['food'] = event['request']['intent']['slots']['foodName']['value']
+    sentence = "I like " + session['attributes']['food'] + " too"
+    return response(sentence, session['attributes'], False)
+
 def RepeatIntent(event, session):
-    return response("Your name is " + session['attributes']['name'], session['attributes'], False)
+    sentence = "Your name is " + session['attributes']['name']
+    sentence += " and your favorite food is " + session['attributes']['food']
+    return response(sentence, session['attributes'], False)
 
 # --------------- Helper that build all of the responses ----------------------
 
