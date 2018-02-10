@@ -25,7 +25,7 @@ Notice there are a pair of braces, `{}`, right next to `favoritefood`.
 All it means is that we created the variable but it does not hold any data.
 To fill it with data, we just need to include `=` to the right of `event['session']['attributes']['favoritefood']`.
 ```
-event['session']['attributes']['favoritefood'] = taco
+event['session']['attributes']['favoritefood'] = "taco"
 ```
 
 Now our event list will look something like this:
@@ -38,4 +38,4 @@ event{
   },
 }
 ```
-Now this will only work until after we a new response a made.
+Now this will only work until after we a new response is made.
