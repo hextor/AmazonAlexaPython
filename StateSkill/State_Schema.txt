@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "userChoice",
+          "type": "AMAZON.US_STATE"
+        }
+      ],
+      "intent": "StateIntent"
+    },
+    {
+      "intent": "DetailsIntent"
+    },
+    {
+      "intent": "HistoricalFactsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "userChoice_",
+          "type": "AMAZON.US_STATE"
+        }
+      ],
+      "intent": "EverythingIntent"
+    }
+  ]
+}

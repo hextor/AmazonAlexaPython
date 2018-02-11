@@ -1,0 +1,8 @@
+StateIntent lets talk about {userChoice}
+StateIntent tell me about {userChoice}
+DetailsIntent tell me its details
+DetailsIntent the details
+HistoricalFactsIntent tell me its history
+HistoricalFactsIntent the history
+EverythingIntent tell me everything
+EverythingIntent tell me about {userChoice_} historical information
