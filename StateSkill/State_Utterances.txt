@@ -1,8 +1,10 @@
-StateIntent lets talk about {userChoice}
-StateIntent tell me about {userChoice}
+HistoricalInformationIntent tell me about {stateChoice} historical information
 DetailsIntent tell me its details
 DetailsIntent the details
+DetailsIntent details
 HistoricalFactsIntent tell me its history
 HistoricalFactsIntent the history
-EverythingIntent tell me everything
-EverythingIntent tell me about {userChoice_} historical information
+HistoricalFactsIntent historical facts
+StatehoodHistoryIntent tell me its statehood
+StatehoodHistoryIntent the statehood
+StatehoodHistoryIntent statehood
