@@ -3,11 +3,11 @@
     {
       "slots": [
         {
-          "name": "userChoice",
+          "name": "stateChoice",
           "type": "AMAZON.US_STATE"
         }
       ],
-      "intent": "StateIntent"
+      "intent": "HistoricalInformationIntent"
     },
     {
       "intent": "DetailsIntent"
@@ -16,13 +16,7 @@
       "intent": "HistoricalFactsIntent"
     },
     {
-      "slots": [
-        {
-          "name": "userChoice_",
-          "type": "AMAZON.US_STATE"
-        }
-      ],
-      "intent": "EverythingIntent"
+      "intent": "StatehoodHistoryIntent"
     }
   ]
 }
