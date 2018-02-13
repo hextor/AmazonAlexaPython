@@ -192,8 +192,8 @@ def FamousPeopleIntent(event,session):
 
 #---------------- Courtesy responses ------------------------------------------
 def LaunchRequest(event, session):
-    sentence ="Welcome to the state information booth. Would you like to talk about a state's historical information or a state's features?"
-    response(sentence, session['attributes'], False)
+    sentence = "Welcome to the state information booth. Would you like to talk about a state's historical information or a state's features?"
+    return response(sentence, session['attributes'], False)
 
 # --------------- Helper that build all of the responses ----------------------
 
