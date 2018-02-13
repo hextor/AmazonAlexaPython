@@ -1,4 +1,5 @@
 HistoricalInformationIntent tell me about {stateChoice} historical information
+StateFeaturesIntent tell me about {stateChoice} state Features
 DetailsIntent tell me its details
 DetailsIntent the details
 DetailsIntent details
@@ -8,3 +9,15 @@ HistoricalFactsIntent historical facts
 StatehoodHistoryIntent tell me its statehood
 StatehoodHistoryIntent the statehood
 StatehoodHistoryIntent statehood
+PhysicalFeaturesIntent tell me its physical features
+PhysicalFeaturesIntent physical features
+PoliticalFeaturesIntent tell me its political features
+PoliticalFeaturesIntent political features
+EconomyIntent tell me its economy
+EconomyIntent economy
+WeatherIntent tell me its weather
+WeatherIntent weather
+VisitorsGuideIntent tell me about the visitors guide
+VisitorsGuideIntent visitors guide
+FamousPeopleIntent tell me about its famous people
+FamousPeopleIntent famous people
