@@ -1,4 +1,6 @@
+HistoricalInformationIntent about {stateChoice} historical information
 HistoricalInformationIntent tell me about {stateChoice} historical information
+StateFeaturesIntent about {stateChoice} state features
 StateFeaturesIntent tell me about {stateChoice} state Features
 DetailsIntent tell me its details
 DetailsIntent the details
