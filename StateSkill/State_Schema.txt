@@ -10,6 +10,15 @@
       "intent": "HistoricalInformationIntent"
     },
     {
+      "slots": [
+        {
+          "name": "stateChoice",
+          "type": "AMAZON.US_STATE"
+        }
+      ],
+      "intent": "StateFeaturesIntent"
+    },
+    {
       "intent": "DetailsIntent"
     },
     {
@@ -17,6 +26,24 @@
     },
     {
       "intent": "StatehoodHistoryIntent"
+    },
+    {
+      "intent": "PhysicalFeaturesIntent"
+    },
+    {
+      "intent": "PoliticalFeaturesIntent"
+    },
+    {
+      "intent": "EconomyIntent"
+    },
+    {
+      "intent": "WeatherIntent"
+    },
+    {
+      "intent": "VisitorsGuideIntent"
+    },
+    {
+      "intent": "FamousPeopleIntent"
     }
   ]
 }
