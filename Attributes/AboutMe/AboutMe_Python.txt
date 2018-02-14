@@ -1,3 +1,4 @@
+
 # --------------- Main handler ------------------
 def lambda_handler(event, context):
     session = event['session']
