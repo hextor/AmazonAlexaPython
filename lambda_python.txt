@@ -1,15 +1,18 @@
 # --------------- Main handler ------------------
 def lambda_handler(event, context):
-    if event['request']['intent']['name'] == 'MyIntent':
-        return MyIntent(event)
+    intent_name = event['request']['intent']['name']
+    session = event['session']
+
+    if intent_name == 'MyIntent':
+        return MyIntent(event, session)
 
 # --------------- Functions that control the skill's behavior ------------------
-def MyIntent(event):
-    return response("Hi there!", False)
+def MyIntent(event, session):
+    return response("Hi there!", session['attributes'], False)
 
 # --------------- Helper that build all of the responses ----------------------
 
-def response(text, should_end_session):
+def response(text, session_attributes, should_end_session):
     return {
     "version": "1.0",
      "response": {
@@ -24,5 +27,5 @@ def response(text, should_end_session):
       "shouldEndSession": should_end_session
       }
      },
-    "sessionAttributes": {}
+    "sessionAttributes": session_attributes
     }
