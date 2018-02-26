@@ -1,0 +1,4 @@
+SetStudentInfoIntent set {setName}
+GetStudentInfoIntent get {getName}
+GiveStudentStarIntent reward {giveName} with {giveStar} stars
+DeleteStudentIntent delete {deleteName} from the roster

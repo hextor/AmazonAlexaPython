@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "setName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "SetStudentInfoIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "getName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "GetStudentInfoIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "giveName",
+          "type": "AMAZON.US_FIRST_NAME"
+        },
+        {
+          "name": "giveStar",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "GiveStudentStarIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "deleteName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "DeleteStudentIntent"
+    }
+  ]
+}
