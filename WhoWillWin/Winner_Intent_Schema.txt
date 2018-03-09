@@ -1,0 +1,17 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "playerOne",
+          "type": "AMAZON.Artist"
+        },
+        {
+          "name": "playerTwo",
+          "type": "AMAZON.Artist"
+        }
+      ],
+      "intent": "WhoWinsIntent"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+WhoWinsIntent will {playerOne} beat {playerTwo}
+WhoWinsIntent is {playerOne} better than {playerTwo}
