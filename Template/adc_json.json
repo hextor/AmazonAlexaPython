@@ -1,0 +1,53 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "thursday morning coding",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloIntent",
+                    "slots": [],
+                    "samples": [
+                        "good morning"
+                    ]
+                },
+                {
+                    "name": "FavoriteIntent",
+                    "slots": [
+                        {
+                            "name": "myFood",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "i like {myFood}"
+                    ]
+                },
+                {
+                    "name": "RepeatInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "repeat",
+                        "repeat my info"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
